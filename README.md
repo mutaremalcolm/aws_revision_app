@@ -1,37 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<a name="readme-top"></a>
 
-## Getting Started
+<!-- -------------------------------------------------------------------------- -->
+<!-- HEADING STUFF  -->
+<div align="center">
+  <h2>AWS Revision Guide</h2>
+  <h4>A Next.js App to Help Prepare for AWS Certification Examinations</h4>
+  <h3>
+    <a href='https://aws-revision-app.vercel.app/' target='_blank'>
+      <h5>Live Demo ↗</h5>
+    </a>
+  </h3>
+</div>
 
-First, run the development server:
+<!-- -------------------------------------------------------------------------- -->
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 👋 Introduction:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+As I prepared for my AWS Certification Exams, I searched for a tool that could assist me in studying effectively. However, I found that most available tools lacked critical features or weren’t tailored to the needs of someone preparing for these exams. This realization motivated me to create the AWS Revision Guide—a focused, questionnaire-based tool designed to help candidates achieve success in their AWS Certification journey.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The AWS Revision Guide offers an intuitive way to review concepts, answer questions, and track progress. It’s an ideal companion for anyone pursuing AWS certifications.
 
-## Learn More
+<br/>
 
-To learn more about Next.js, take a look at the following resources:
+### 🔑 Features:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### Core Features:
 
-## Deploy on Vercel
+✔ **Questionnaire-Based Study:** A collection of curated AWS-related questions to test and reinforce your knowledge.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+✔ **Interactive User Interface:** A sleek and responsive interface built with React and Next.js to ensure a seamless experience.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# aws_revision_app
+✔ **Progress Tracking:** Monitor your performance and revisit weaker areas for targeted improvement.
+
+✔ **Mobile-Friendly Design:** Fully responsive, ensuring the app is accessible and easy to use on any device.
+
+<br/>
+
+#### Bonus Features:
+
+✔ **Persistent Data:** Utilize localStorage to save your progress so you can resume where you left off.
+
+✔ **Feedback Notifications:** Get unobtrusive notifications after completing a question or section.
+
+✔ **Customizable Exam Simulation:** Mimic real exam conditions with a timer and customizable question sets.
+
+<br/>
+
+<!-- -------------------------------------------------------------------------- -->
+
+### 🎯 Future Improvements:
+
+---
+
+💥 Add AI-powered personalized study recommendations based on user performance.
+
+💥 Enhance styling with dynamic themes and animations for a more engaging user experience.
+
+💥 Integrate a leaderboard for collaborative learning and competition among users.
+
+💥 Expand question categories to cover all AWS certification levels (e.g., Associate, Professional, Specialty).
+
+<br/>
+
+<!-- -------------------------------------------------------------------------- -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<br/> <br/>

@@ -11,7 +11,7 @@ type QuizNavigationProps = {
     handleRestartQuiz: () => void;
     handleGoToFirstUnanswered: () => void;
     toggleDropdown: () => void;
-    isDropDownOpen: boolean;
+    isDropdownOpen: boolean;
     settingsRef: React.RefObject<HTMLDivElement>;
     dropdownRef: React.RefObject<HTMLDivElement>;
  };
@@ -25,7 +25,7 @@ type QuizNavigationProps = {
                                                             handleRestartQuiz,
                                                             handleGoToFirstUnanswered,
                                                             toggleDropdown,
-                                                            isDropDownOpen,
+                                                            isDropdownOpen,
                                                             settingsRef,
                                                             dropdownRef,
                                                         }) => (
@@ -53,7 +53,7 @@ type QuizNavigationProps = {
         </button>
 
         <AnimatePresence>
-            {isDropDownOpen && (
+            {isDropdownOpen && (
                 <motion.div
                     ref={dropdownRef}
                     initial={{ opacity: 0, y: -10 }}

@@ -2,10 +2,10 @@
 'use client';
 
 import { useEffect, useRef, useState } from "react";
-import QuizNavigation from './QuizNavigation';
-import SubdomainProgress from './SubdomainProgress';
-import QuizProgress from './QuizProgress';
 import QuizContent from './QuizContent';
+import QuizNavigation from './QuizNavigation';
+import QuizProgress from './QuizProgress';
+import SubdomainProgress from './SubdomainProgress';
 import { Question, UserAnswer } from './types';
 
 type QuizProps = {
@@ -265,7 +265,8 @@ const Quiz: React.FC<QuizProps> = ({ questions, quizKey }) => {
                     totalQuestions={totalQuestions}
                     questions={questions}
                     currentQuestion={currentQuestion}
-                    handleOptionSelect={handleOptionSelect} // <-- Pass the function here
+                    handleOptionSelect={handleOptionSelect} 
+                    handleNextQuestion={handleNextQuestion}// <-- Pass the function here
                     selectedOption={selectedOption}
                     showExplanation={showExplanation}
                     handleRestartQuiz={handleRestartQuiz}

@@ -19,3 +19,14 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.dark {
+  --background: #1a202c;
+  --foreground: #f7fafc;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

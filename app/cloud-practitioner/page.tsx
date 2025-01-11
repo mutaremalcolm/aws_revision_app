@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-import cppBadge from './public/cppicon.png';
+import  cppBadge  from '/public/cppicon.png';
 
 // import question arrays
 import { cloudPractitionerCloudConceptsDefinition } from '../questions/cloud-practitioner/1-cloud-concepts/1.1';

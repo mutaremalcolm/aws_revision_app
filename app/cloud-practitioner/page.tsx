@@ -133,7 +133,6 @@ export default function CloudPractitionerOverview() {
                         <li>Shared Responsibilty Model:<strong>({securityAndComplianceCount.subdomains.resposibilityModel})</strong></li>
                         <li><strong>Security and Compliance:</strong>({securityAndComplianceCount.subdomains.complianceConcepts})</li>
                         <li><strong>Access management:</strong>({securityAndComplianceCount.subdomains.accessManagement})</li>
-                        <li><strong></strong></li>
                     </ul>
 
                     {/* Technology */}

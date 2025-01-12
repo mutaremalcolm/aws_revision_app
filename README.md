@@ -22,6 +22,8 @@ As I prepared for my AWS Certification Exams, I searched for a tool that could a
 
 The AWS Revision Guide offers an intuitive way to review concepts, answer questions, and track progress. It’s an ideal companion for anyone pursuing AWS certifications.
 
+I build the quiz app using NextJS to leverage its speed by making use of SSR, i opted for tailwind for produce a slick minimal, and fully responsive UI. I also enjoyed working with framer motion to enhance the user experience by incorpoarting visually appealling transformations.
+
 <br/>
 
 ### 🔑 Features:
@@ -55,6 +57,10 @@ The AWS Revision Guide offers an intuitive way to review concepts, answer questi
 ### 🎯 Future Improvements:
 
 ---
+
+💥 Add Google Analytics to be able to track user traffic and behaviours on the application, to see points of improvement based on collected data.
+
+💥 Convert the application into a PWA to enable users to download and use the web app as a mobile application.
 
 💥 Add AI-powered personalized study recommendations based on user performance.
 

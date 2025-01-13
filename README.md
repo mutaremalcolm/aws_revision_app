@@ -50,6 +50,8 @@ I build the quiz app using NextJS to leverage its speed by making use of SSR, i 
 
 ✔ **Customizable Exam Simulation:** Mimic real exam conditions with a timer and customizable question sets.
 
+✔ **Google Analytics For User Data Collection:** Google Analytics to be able to track user traffic and behaviours on the application, to see points of improvement based on collected data.
+
 <br/>
 
 <!-- -------------------------------------------------------------------------- -->
@@ -58,7 +60,6 @@ I build the quiz app using NextJS to leverage its speed by making use of SSR, i 
 
 ---
 
-💥 Add Google Analytics to be able to track user traffic and behaviours on the application, to see points of improvement based on collected data.
 
 💥 Convert the application into a PWA to enable users to download and use the web app as a mobile application.
 

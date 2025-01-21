@@ -1,6 +1,6 @@
 // app/cloud-practitioner/quiz/page.tsx
-import Quiz from "@/app/components/quiz/Quiz";
-import cloudPractitionerQuestions from "@/app/questions/cloud-practitioner";
+import Quiz from "@/components/quiz/Quiz";
+import cloudPractitionerQuestions from "@/questions/cloud-practitioner";
 
 const CloudPractitionerQuiz = () => {
     return (

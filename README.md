@@ -13,9 +13,6 @@
   </h3>
   <h3>
     <a href='https://github.com/users/mutaremalcolm/projects/17/views/1' target='_blank'>
-      <h5>Live Demo ↗</h5>
-    </a>
-  </h3>' target='_blank'>
       <h5>Project Kanban ↗</h5>
     </a>
   </h3>

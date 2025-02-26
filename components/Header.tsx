@@ -11,12 +11,12 @@ export default function Header() {
 
   useEffect(() => {
     setMounted(true);
-  }, []);
+  }, []);``
 
   if (!mounted) return null;
 
   return (
-    <header className="bg-white dark:bg-[#232e3d] border-b-2 border-[#545b63] text-black dark:text-white shadow-lg">
+    <header className={`${ theme === 'light' ? 'bg-white text-black' : 'bg-[#232e3d]'} border-b-2 border-[#545b63] text-black dark:text-white shadow-lg`}>
       <nav className="container px-4 flex justify-between items-center py-2 min-w-full">
         <a href="/" className="flex items-center space-x-2 text-xl font-bold">
           <Image
@@ -25,7 +25,7 @@ export default function Header() {
             width={40}
             height={40}
           />
-          <span>AWS 360</span>
+          <span className={`${ theme === 'light' ? 'text-black' : 'text-white' }`}>AWS 360</span>
         </a>
 
         <div className="flex space-x-4 items-center">

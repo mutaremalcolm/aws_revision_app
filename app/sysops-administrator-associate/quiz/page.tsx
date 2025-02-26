@@ -1,7 +1,7 @@
 // components/sysops/SysOpsQuiz.tsx
 
-import Quiz from '@/app/components/quiz/Quiz';
-import sysOpsAdministratorQuestions from '@/app/questions/sysops-administrator-associate';
+import Quiz from '@/components/quiz/Quiz';
+import sysOpsAdministratorQuestions from '@/questions/sysops-administrator-associate';
 
 const SysOpsQuiz = () => {
     return (

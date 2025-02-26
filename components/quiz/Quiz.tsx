@@ -13,6 +13,7 @@ type QuizProps = {
     quizKey: string;
 };
 
+//TODO: refactor and useReducer Hook
 const Quiz: React.FC<QuizProps> = ({ questions, quizKey }) => {
     const LOCAL_STORAGE_KEY = `${quizKey}QuizAnswers`;
 
@@ -55,6 +56,7 @@ const Quiz: React.FC<QuizProps> = ({ questions, quizKey }) => {
     };
 
     // Load User Answers from Local Storage on Mount
+    // TODO: Refactor repetion of useEffect hook *DRY*
     useEffect(() => {
         const storedAnswers = localStorage.getItem(LOCAL_STORAGE_KEY);
         if (storedAnswers){

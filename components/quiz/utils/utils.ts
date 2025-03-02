@@ -14,6 +14,10 @@ export const findFirstUnanswered = (questions: Question[], answers: UserAnswer[]
     return questions.length - 1;
 };
 
+export const calculatePercentageComplete = (answeredQuestions: number, totalQuestions: number): number => {
+    return Math.round((answeredQuestions / totalQuestions ) * 100);
+};
+
 export const calculateSubDomainProgress = (
     questions: Question[],
     userAnswers: UserAnswer[],

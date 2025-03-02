@@ -15,6 +15,7 @@ export type UserAnswer = {
 };
 
 export type QuizState = {
+    totalQuestions: number;
     userAnswers: UserAnswer[];
     currentQuestion: number;
     score: number;

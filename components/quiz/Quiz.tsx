@@ -1,19 +1,19 @@
 // components/quiz/Quiz.tsx
 'use client';
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useReducer } from "react";
 import QuizContent from './QuizContent';
 import QuizNavigation from './QuizNavigation';
 import QuizProgress from './QuizProgress';
 import SubdomainProgress from './SubdomainProgress';
-import { Question, UserAnswer } from './types';
+import { Question, UserAnswer, QuizState, QuizAction } from './types';
 
 type QuizProps = {
     questions: Question[];
     quizKey: string;
 };
 
-//TODO: refactor and useReducer Hook
+// TODO: refactor and useReducer Hook
 const Quiz: React.FC<QuizProps> = ({ questions, quizKey }) => {
     const LOCAL_STORAGE_KEY = `${quizKey}QuizAnswers`;
 

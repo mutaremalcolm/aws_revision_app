@@ -21,7 +21,6 @@ type QuizProps = {
     quizKey: string;
 };
 
-// TODO: refactor and useReducer Hook
 const Quiz: React.FC<QuizProps> = ({ questions, quizKey }) => {
     // Custom hooks
     const { saveAnswers, loadAnswers, clearAnswers } = useQuizPersistence(quizKey);

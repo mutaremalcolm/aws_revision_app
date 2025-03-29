@@ -64,7 +64,10 @@ export const quizReducer = (state: QuizState, action: QuizAction): QuizState => 
             return {
                 ...state,
                 currentQuestion: isLastQuestion ? state.currentQuestion : state.currentQuestion + 1,
-                showScore: isLastQuestion
+                showScore: isLastQuestion,
+                selectedOption: '',
+                isCorrect: null,
+                showExplanation: false
             };
         }
 

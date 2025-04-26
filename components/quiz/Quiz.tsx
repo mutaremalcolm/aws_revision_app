@@ -64,7 +64,7 @@ const Quiz: React.FC<QuizProps> = ({ questions, quizKey }) => {
         }
     }, []);
 
-    // Save answers to loaclStorage when they change
+    // Save answers to localStorage when they change
     useEffect(() => {
         if (state.userAnswers.length > 0) {
             saveAnswers(state.userAnswers);

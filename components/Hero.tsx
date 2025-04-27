@@ -19,6 +19,14 @@ const certifications = [
         link: '/sysops-administrator-associate',
         disabled: false,
     },
+    {
+        id: 3,
+        title: 'AWS Solutions Architect - Associate',
+        description: 'Test your knowledge with comprehensive multiple-choice quizzes and prepare for your AWS Solutions Architect Associate certification.',
+        badge: '/saas.png',
+        link: '/solutions-architect-associate',
+        disabled: false,
+    }
 ];
 
 export default function Hero() {

@@ -66,7 +66,7 @@ export default function SolutionArchitectAssociateOverview() {
 };
 
     const handleStartQuiz = () => {
-        router.push('cloud-practioner/quiz');
+        router.push('solutions-architect-associate/quiz');
     };
 
     return (
@@ -114,7 +114,7 @@ export default function SolutionArchitectAssociateOverview() {
                 </ul>
 
                 {/* Design resillient Architecture */}
-                <h3 className='text-lg font-semibold mb-2'>2. Resillient Architecture</h3>
+                <h3 className='text-lg font-semibold mb-2 mt-4'>2. Resillient Architecture</h3>
                 <p>
                     Expect {designResillientArchitectureCount.total} questions:
                 </p>
@@ -124,7 +124,7 @@ export default function SolutionArchitectAssociateOverview() {
                 </ul>
 
                 {/* Design High Performing Architecture */}
-                <h3 className='text-lg font-semibold mb-2'>3. High Performing Architecture</h3>
+                <h3 className='text-lg font-semibold mb-2 mt-4'>3. High Performing Architecture</h3>
                 <p>
                     Expect {designHighPerformingArchitecturesCount.total} questions:
                 </p>
@@ -134,7 +134,7 @@ export default function SolutionArchitectAssociateOverview() {
                 </ul>
 
                 {/* Design Well Performing Architecture */}
-                <h3 className='text-lg font-semibold mb-2'>4. Well Performing Architecture</h3>
+                <h3 className='text-lg font-semibold mb-2 mt-4'>4. Well Performing Architecture</h3>
                 <p>
                     Expect {designWellPerformingArchitecturesCount.total} questions:
                 </p>

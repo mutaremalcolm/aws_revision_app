@@ -1,6 +1,6 @@
 // Subdomain 3.1: Design high-performing and scalable solutions
 
-export const solutionsArchitectScalableSolutions = [
+export const solutionsArchitectScaleableSolutions = [
 {
     id: 1,
     subDomain: "3.1 Design high-performing and scalable solutions",

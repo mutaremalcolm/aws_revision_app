@@ -1,5 +1,6 @@
 // components/QuizProgress.tsx
 
+import React from 'react';
 import { FaCheck, FaTimes } from 'react-icons/fa';
 import { Question, UserAnswer } from './types';
 
@@ -19,7 +20,9 @@ const QuizProgress: React.FC<QuizProgressProps> = ({
                                                         handleProgressBarClick,
                                                         totalQuestions,
                                                         calculatePercentageComplete
-                                                    }) => (
+                                                    }) => {                                               
+   return (
+
     <div className='w-full max-w-2xl mb-4'>
         <div className='flex justify-between items-center mb-2'>
             <span className='text-xs font-medium text-gray-700 dark:text-gray-300'>
@@ -37,12 +40,13 @@ const QuizProgress: React.FC<QuizProgressProps> = ({
             ></div>
 
             <div className='absolute inset-0 flex justify-between'>
-                {questions.map((_, index) => {
+                {questions.map((question, index) => {
                     const isCurrent = index === currentQuestion;
-                    const isAnswered = userAnswers.find(
-                        (ans) => ans.question === questions[index].question
+                    const answer = userAnswers.find(
+                        (ans) => ans.question === question.id
                     );
-                    const isCorrect = isAnswered?.isCorrect;
+                    const isAnswered = !!answer;
+                    const isCorrect = answer?.isCorrect
 
                     return (
                         <button
@@ -71,5 +75,6 @@ const QuizProgress: React.FC<QuizProgressProps> = ({
         </div>
     </div>                                                    
 );
+}
 
 export default QuizProgress;

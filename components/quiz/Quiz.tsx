@@ -31,6 +31,7 @@ const Quiz: React.FC<QuizProps> = ({ questions, quizKey }) => {
 
     //Initial state
     const initialState: QuizState = {
+        questions,
         userAnswers: [],
         currentQuestion: 0,
         score: 0,
@@ -107,7 +108,7 @@ const Quiz: React.FC<QuizProps> = ({ questions, quizKey }) => {
         const isCorrect = option === currentQ.answer;
 
         const existingAnswerIndex = state.userAnswers.findIndex(
-            (answer) => answer.question === currentQ.question
+            (answer) => answer.question === state.currentQuestion.toString()
         );
 
         dispatch({

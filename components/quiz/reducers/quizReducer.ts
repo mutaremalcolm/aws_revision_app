@@ -19,6 +19,9 @@ export const quizReducer = (state: QuizState, action: QuizAction): QuizState => 
             let updatedScore = state.score;
             let updatedAnswers = [...state.userAnswers];
 
+            // get the current question ID
+            const currentQuestionId = state.questions[state.currentQuestion].id;
+
             if (existingAnswerIndex !== -1) {
                 //Update existing answer
                 const previouslyCorrect = updatedAnswers[existingAnswerIndex].isCorrect;
@@ -42,7 +45,7 @@ export const quizReducer = (state: QuizState, action: QuizAction): QuizState => 
                 }
 
                 updatedAnswers.push({
-                    question: state.currentQuestion.toString(),
+                    question: currentQuestionId,
                     selectedOption: option as string,
                     isCorrect: isCorrect as boolean
                 });

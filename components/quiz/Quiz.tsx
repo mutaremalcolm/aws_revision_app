@@ -21,7 +21,16 @@ type QuizProps = {
     quizKey: string;
 };
 
-const Quiz: React.FC<QuizProps> = ({ questions, quizKey }) => {
+const Quiz: React.FC<QuizProps> = ({ questions: rawQuestions, quizKey }) => {
+    // Filter out duplicate questions here - this is the critical fix
+    const questions = rawQuestions.filter(
+        (question, index, self) => 
+            index === self.findIndex(q => q.id === question.id)
+    );
+    
+    // Log diagnostic info
+    console.log(`Original questions: ${rawQuestions.length}, Unique questions: ${questions.length}`);
+    
     // Custom hooks
     const { saveAnswers, loadAnswers, clearAnswers } = useQuizPersistence(quizKey);
 
@@ -44,7 +53,6 @@ const Quiz: React.FC<QuizProps> = ({ questions, quizKey }) => {
         currentSubDomain: questions.length > 0 ? questions[0].subDomain : '',
         currentCriticalTopic: questions.length > 0 ? questions[0].criticalTopic : '',
         totalQuestions: questions.length
-
     };
 
     const [state, dispatch] = useReducer(quizReducer, initialState);
@@ -108,7 +116,7 @@ const Quiz: React.FC<QuizProps> = ({ questions, quizKey }) => {
         const isCorrect = option === currentQ.answer;
 
         const existingAnswerIndex = state.userAnswers.findIndex(
-            (answer) => answer.question === state.currentQuestion.toString()
+            (answer) => answer.question === currentQ.id.toString()
         );
 
         dispatch({

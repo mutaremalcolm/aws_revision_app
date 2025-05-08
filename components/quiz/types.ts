@@ -13,6 +13,7 @@ export type UserAnswer = {
     question: any;
     selectedOption: string;
     isCorrect: boolean;
+    answer: string;
 };
 
 export type QuizState = {

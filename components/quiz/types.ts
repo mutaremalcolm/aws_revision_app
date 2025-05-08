@@ -9,12 +9,15 @@ export type Question = {
 };
 
 export type UserAnswer = {
-    question: string;
+    // TODO: resolve question type properly
+    question: any;
     selectedOption: string;
     isCorrect: boolean;
+    answer: string;
 };
 
 export type QuizState = {
+    questions: Question[];
     totalQuestions: number;
     userAnswers: UserAnswer[];
     currentQuestion: number;

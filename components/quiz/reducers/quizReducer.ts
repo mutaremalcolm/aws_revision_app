@@ -50,6 +50,22 @@ export const quizReducer = (state: QuizState, action: QuizAction): QuizState => 
             const currentDomain = state.questions[state.currentQuestion].subDomain;
             let nextIndex = state.currentQuestion + 1;
             
+            // If we've reached the end of current domain, find first question of next domain
+            if (nextIndex < state.questions.length && 
+                state.questions[nextIndex].subDomain !== currentDomain) {
+                // Find first question of next domain
+                const nextDomainQuestions = state.questions
+                    .slice(nextIndex)
+                    .filter(q => q.subDomain !== currentDomain);
+                
+                if (nextDomainQuestions.length > 0) {
+                    // Find the index of the first question in the next domain
+                    nextIndex = state.questions.findIndex(
+                        q => q.id === nextDomainQuestions[0].id
+                    );
+                }
+            }
+            
             // If we've reached the end of all questions, stay on the last question
             if (nextIndex >= state.questions.length) {
                 nextIndex = state.currentQuestion;

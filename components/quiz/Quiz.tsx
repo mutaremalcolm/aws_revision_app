@@ -22,14 +22,11 @@ type QuizProps = {
 };
 
 const Quiz: React.FC<QuizProps> = ({ questions: rawQuestions, quizKey }) => {
-    // Filter out duplicate questions here - this is the critical fix
+    // Filter out duplicate question
     const questions = rawQuestions.filter(
         (question, index, self) => 
             index === self.findIndex(q => q.id === question.id)
     );
-    
-    // Log diagnostic info
-    console.log(`Original questions: ${rawQuestions.length}, Unique questions: ${questions.length}`);
     
     // Custom hooks
     const { saveAnswers, loadAnswers, clearAnswers } = useQuizPersistence(quizKey);

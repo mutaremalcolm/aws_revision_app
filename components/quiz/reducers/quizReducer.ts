@@ -47,7 +47,14 @@ export const quizReducer = (state: QuizState, action: QuizAction): QuizState => 
             };
         
         case 'NEXT_QUESTION':
-            const nextIndex = (state.currentQuestion + 1) % state.questions.length;
+            const currentDomain = state.questions[state.currentQuestion].subDomain;
+            let nextIndex = state.currentQuestion + 1;
+            
+            // If we've reached the end of all questions, stay on the last question
+            if (nextIndex >= state.questions.length) {
+                nextIndex = state.currentQuestion;
+            }
+            
             return {
                 ...state,
                 currentQuestion: nextIndex,
@@ -99,7 +106,7 @@ export const quizReducer = (state: QuizState, action: QuizAction): QuizState => 
                 ...state,
                 isDropdownOpen: false
             };
-        
+        ``
         case 'UPDATE_SUBDOMAIN_PROGRESS':
             return {
                 ...state,

@@ -23,12 +23,14 @@ export const calculateSubDomainProgress = (
     userAnswers: UserAnswer[],
     subdomain: string
 ): number => {
-    const questionsInSubDomain = questions.filter((q) => q.subDomain === subdomain).length;
-    if (questionsInSubDomain === 0) return 0
+    // Get all questions for this subdomain
+    const questionsInSubDomain = questions.filter((q) => q.subDomain === subdomain);
+    if (questionsInSubDomain.length === 0) return 0;
 
-    const answeredInSubDomain = userAnswers.filter(
-        (ans) => questions.find(q => q.question === ans.question)?.subDomain === subdomain
+    // Count answered questions in this subdomain
+    const answeredInSubDomain = questionsInSubDomain.filter((question) => 
+        userAnswers.some(answer => answer.question === question.id.toString())
     ).length;
 
-    return Math.round((answeredInSubDomain / questionsInSubDomain) * 100);
+    return Math.round((answeredInSubDomain / questionsInSubDomain.length) * 100);
 };

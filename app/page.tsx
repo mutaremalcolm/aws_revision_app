@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Hero from "../components/Hero";
 import { Analytics } from "@vercel/analytics/next";
 

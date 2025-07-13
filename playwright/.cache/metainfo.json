@@ -1,0 +1,36 @@
+{
+  "version": "1.50.1",
+  "viteVersion": "5.4.14",
+  "registerSourceHash": "ea233d95b980072c81eb49458aee55f5d33fdb02",
+  "components": [],
+  "sources": {
+    "/Users/malcom/aws-revison-guide/playwright/index.html": {
+      "timestamp": 1740997977471.0286
+    },
+    "/Users/malcom/aws-revison-guide/playwright/index.tsx": {
+      "timestamp": 1740997977472.5315
+    },
+    "/Users/malcom/aws-revison-guide/node_modules/react-dom/client.js": {
+      "timestamp": 1736257345525.562
+    },
+    "/Users/malcom/aws-revison-guide/node_modules/react/index.js": {
+      "timestamp": 1736257345545.7493
+    },
+    "/Users/malcom/aws-revison-guide/node_modules/react/cjs/react.production.min.js": {
+      "timestamp": 1736257346929.94
+    },
+    "/Users/malcom/aws-revison-guide/node_modules/react-dom/index.js": {
+      "timestamp": 1736257345577.197
+    },
+    "/Users/malcom/aws-revison-guide/node_modules/react-dom/cjs/react-dom.production.min.js": {
+      "timestamp": 1736257348751.957
+    },
+    "/Users/malcom/aws-revison-guide/node_modules/scheduler/index.js": {
+      "timestamp": 1736257345519.7048
+    },
+    "/Users/malcom/aws-revison-guide/node_modules/scheduler/cjs/scheduler.production.min.js": {
+      "timestamp": 1736257346613.7913
+    }
+  },
+  "deps": {}
+}

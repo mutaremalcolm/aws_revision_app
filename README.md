@@ -5,15 +5,9 @@
 <div align="center">
   <h2>AWS Revision Guide</h2>
   <h4>A Next.js App to Help Prepare for AWS Certification Examinations</h4>
-  <h4>Still a work in progress!!</h4>
   <h3>
     <a href='https://aws-revision-app.vercel.app/' target='_blank'>
       <h5>Live Demo ↗</h5>
-    </a>
-  </h3>
-  <h3>
-    <a href='https://github.com/users/mutaremalcolm/projects/17/views/1' target='_blank'>
-      <h5>Project Kanban ↗</h5>
     </a>
   </h3>
 </div>
@@ -29,8 +23,6 @@ As I prepared for my AWS Certification Exams, I searched for a tool that could a
 The AWS Revision Guide offers an intuitive way to review concepts, answer questions, and track progress. It’s an ideal companion for anyone pursuing AWS certifications.
 
 I build the quiz app using NextJS to leverage its speed by making use of SSR, i opted for tailwind for produce a slick minimal, and fully responsive UI. I also enjoyed working with framer motion to enhance the user experience by incorpoarting visually appealling transformations.
-
-The project is still under project and based on user feedback, i have defined a roadmap that is set out in the Project Kanab with the link above, but just in passing i will add  more quizes for the AWS badges, and also convert the application to a PWA. I also plan to migrate the application to AWS (seems natural and fitting) its currently deployed on Vercel.
 
 <br/>
 
